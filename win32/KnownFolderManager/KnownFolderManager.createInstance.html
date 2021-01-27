@@ -63,9 +63,9 @@
     <li class="section-title inherited">
       <a href="../../win32/KnownFolderManager-class.html#instance-properties">Properties</a>
     </li>
-    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/hashCode.html">hashCode</a></li>
     <li class="inherited"><a href="../../win32/IUnknown/ptr.html">ptr</a></li>
-    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></li>
 
     <li class="section-title inherited"><a href="../../win32/KnownFolderManager-class.html#instance-methods">Methods</a></li>
     <li class="inherited"><a href="../../win32/IUnknown/AddRef.html">AddRef</a></li>
@@ -76,16 +76,16 @@
     <li class="inherited"><a href="../../win32/IKnownFolderManager/GetFolder.html">GetFolder</a></li>
     <li class="inherited"><a href="../../win32/IKnownFolderManager/GetFolderByName.html">GetFolderByName</a></li>
     <li class="inherited"><a href="../../win32/IKnownFolderManager/GetFolderIds.html">GetFolderIds</a></li>
-    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
     <li class="inherited"><a href="../../win32/IUnknown/QueryInterface.html">QueryInterface</a></li>
     <li class="inherited"><a href="../../win32/IKnownFolderManager/Redirect.html">Redirect</a></li>
     <li class="inherited"><a href="../../win32/IKnownFolderManager/RegisterFolder.html">RegisterFolder</a></li>
     <li class="inherited"><a href="../../win32/IUnknown/Release.html">Release</a></li>
-    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/toString.html">toString</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/toString.html">toString</a></li>
     <li class="inherited"><a href="../../win32/IKnownFolderManager/UnregisterFolder.html">UnregisterFolder</a></li>
 
     <li class="section-title inherited"><a href="../../win32/KnownFolderManager-class.html#operators">Operators</a></li>
-    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/operator_equals.html">operator ==</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/operator_equals.html">operator ==</a></li>
 
 
 
@@ -108,8 +108,8 @@
       <h2><span>Implementation</span></h2>
       <pre class="language-dart"><code class="language-dart">factory KnownFolderManager.createInstance() {
   final ptr = calloc&lt;COMObject&gt;();
-  final clsid = calloc&lt;GUID&gt;()..setGUID(CLSID_KnownFolderManager);
-  final iid = calloc&lt;GUID&gt;()..setGUID(IID_IKnownFolderManager);
+  final clsid = calloc&lt;GUID&gt;()..ref.setGUID(CLSID_KnownFolderManager);
+  final iid = calloc&lt;GUID&gt;()..ref.setGUID(IID_IKnownFolderManager);
 
   try {
     final hr = CoCreateInstance(clsid, nullptr, CLSCTX_ALL, iid, ptr.cast());
@@ -134,7 +134,7 @@
 <footer>
   <span class="no-break">
     win32
-      2.0.0-nullsafety.8
+      2.0.0-nullsafety.9
   </span>
 
 </footer>

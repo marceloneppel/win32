@@ -176,6 +176,7 @@
   <li><a href="../win32/MENUINFO-class.html">MENUINFO</a></li>
   <li><a href="../win32/MENUITEMINFO-class.html">MENUITEMINFO</a></li>
   <li><a href="../win32/MINMAXINFO-class.html">MINMAXINFO</a></li>
+  <li><a href="../win32/MMTIME-class.html">MMTIME</a></li>
   <li><a href="../win32/MONITORINFO-class.html">MONITORINFO</a></li>
   <li><a href="../win32/MOUSEINPUT-class.html">MOUSEINPUT</a></li>
   <li><a href="../win32/MSG-class.html">MSG</a></li>
@@ -195,6 +196,7 @@
   <li><a href="../win32/PROPERTYKEY-class.html">PROPERTYKEY</a></li>
   <li><a href="../win32/PROPVARIANT-class.html">PROPVARIANT</a></li>
   <li><a href="../win32/RECT-class.html">RECT</a></li>
+  <li><a href="../win32/RGBQUAD-class.html">RGBQUAD</a></li>
   <li><a href="../win32/RO_INIT_TYPE-class.html">RO_INIT_TYPE</a></li>
   <li><a href="../win32/SAFEARRAY-class.html">SAFEARRAY</a></li>
   <li><a href="../win32/SCROLLINFO-class.html">SCROLLINFO</a></li>
@@ -220,6 +222,9 @@
   <li><a href="../win32/VARENUM-class.html">VARENUM</a></li>
   <li><a href="../win32/VARIANT-class.html">VARIANT</a></li>
   <li><a href="../win32/VS_FIXEDFILEINFO-class.html">VS_FIXEDFILEINFO</a></li>
+  <li><a href="../win32/WAVEFORMATEX-class.html">WAVEFORMATEX</a></li>
+  <li><a href="../win32/WAVEHDR-class.html">WAVEHDR</a></li>
+  <li><a href="../win32/WAVEOUTCAPS-class.html">WAVEOUTCAPS</a></li>
   <li><a href="../win32/WbemLocator-class.html">WbemLocator</a></li>
   <li><a href="../win32/WIN32_FIND_DATA-class.html">WIN32_FIND_DATA</a></li>
   <li><a href="../win32/WINDOWINFO-class.html">WINDOWINFO</a></li>
@@ -229,18 +234,7 @@
   <li><a href="../win32/DialogItemTemplateHelper.html">DialogItemTemplateHelper</a></li>
   <li><a href="../win32/DialogTemplateHelper.html">DialogTemplateHelper</a></li>
   <li><a href="../win32/HexConversion.html">HexConversion</a></li>
-  <li><a href="../win32/Pointer_NOTIFYICONDATA_Extension.html">Pointer_NOTIFYICONDATA_Extension</a></li>
-  <li><a href="../win32/PointerBLUETOOTH_DEVICE_INFOExtension.html">PointerBLUETOOTH_DEVICE_INFOExtension</a></li>
-  <li><a href="../win32/PointerBLUETOOTH_OOB_DATA_INFOExtension.html">PointerBLUETOOTH_OOB_DATA_INFOExtension</a></li>
-  <li><a href="../win32/PointerBLUETOOTH_PIN_INFOExtension.html">PointerBLUETOOTH_PIN_INFOExtension</a></li>
-  <li><a href="../win32/PointerBLUETOOTH_RADIO_INFOExtension.html">PointerBLUETOOTH_RADIO_INFOExtension</a></li>
-  <li><a href="../win32/PointerENUMLOGFONTEXExtension.html">PointerENUMLOGFONTEXExtension</a></li>
-  <li><a href="../win32/PointerGUIDExtension.html">PointerGUIDExtension</a></li>
-  <li><a href="../win32/PointerINPUTExtension.html">PointerINPUTExtension</a></li>
-  <li><a href="../win32/PointerLOGFONTExtension.html">PointerLOGFONTExtension</a></li>
-  <li><a href="../win32/PointerOSVERSIONINFOExtension.html">PointerOSVERSIONINFOExtension</a></li>
-  <li><a href="../win32/PointerPHYSICAL_MONITORExtension.html">PointerPHYSICAL_MONITORExtension</a></li>
-  <li><a href="../win32/PointerWIN32_FIND_DATAExtension.html">PointerWIN32_FIND_DATAExtension</a></li>
+  <li><a href="../win32/Pointer_INPUT_Extension.html">Pointer_INPUT_Extension</a></li>
   <li><a href="../win32/SetString.html">SetString</a></li>
   <li><a href="../win32/Uint8ListBlobConversion.html">Uint8ListBlobConversion</a></li>
   <li><a href="../win32/Utf16Conversion.html">Utf16Conversion</a></li>
@@ -295,6 +289,12 @@
   <li><a href="../win32/BS_TYPEMASK-constant.html">BS_TYPEMASK</a></li>
   <li><a href="../win32/BS_USERBUTTON-constant.html">BS_USERBUTTON</a></li>
   <li><a href="../win32/BS_VCENTER-constant.html">BS_VCENTER</a></li>
+  <li><a href="../win32/CALLBACK_EVENT-constant.html">CALLBACK_EVENT</a></li>
+  <li><a href="../win32/CALLBACK_FUNCTION-constant.html">CALLBACK_FUNCTION</a></li>
+  <li><a href="../win32/CALLBACK_NULL-constant.html">CALLBACK_NULL</a></li>
+  <li><a href="../win32/CALLBACK_THREAD-constant.html">CALLBACK_THREAD</a></li>
+  <li><a href="../win32/CALLBACK_WINDOW-constant.html">CALLBACK_WINDOW</a></li>
+  <li><a href="../win32/calloc-constant.html">calloc</a></li>
   <li><a href="../win32/CF_BITMAP-constant.html">CF_BITMAP</a></li>
   <li><a href="../win32/CF_DIB-constant.html">CF_DIB</a></li>
   <li><a href="../win32/CF_DIBV5-constant.html">CF_DIBV5</a></li>
@@ -526,7 +526,10 @@
   <li><a href="../win32/ERROR_WRONG_DISK-constant.html">ERROR_WRONG_DISK</a></li>
   <li><a href="../win32/ES_AUTOHSCROLL-constant.html">ES_AUTOHSCROLL</a></li>
   <li><a href="../win32/ES_AUTOVSCROLL-constant.html">ES_AUTOVSCROLL</a></li>
+  <li><a href="../win32/ES_AWAYMODE_REQUIRED-constant.html">ES_AWAYMODE_REQUIRED</a></li>
   <li><a href="../win32/ES_CENTER-constant.html">ES_CENTER</a></li>
+  <li><a href="../win32/ES_CONTINUOUS-constant.html">ES_CONTINUOUS</a></li>
+  <li><a href="../win32/ES_DISPLAY_REQUIRED-constant.html">ES_DISPLAY_REQUIRED</a></li>
   <li><a href="../win32/ES_LEFT-constant.html">ES_LEFT</a></li>
   <li><a href="../win32/ES_LOWERCASE-constant.html">ES_LOWERCASE</a></li>
   <li><a href="../win32/ES_MULTILINE-constant.html">ES_MULTILINE</a></li>
@@ -536,7 +539,9 @@
   <li><a href="../win32/ES_PASSWORD-constant.html">ES_PASSWORD</a></li>
   <li><a href="../win32/ES_READONLY-constant.html">ES_READONLY</a></li>
   <li><a href="../win32/ES_RIGHT-constant.html">ES_RIGHT</a></li>
+  <li><a href="../win32/ES_SYSTEM_REQUIRED-constant.html">ES_SYSTEM_REQUIRED</a></li>
   <li><a href="../win32/ES_UPPERCASE-constant.html">ES_UPPERCASE</a></li>
+  <li><a href="../win32/ES_USER_PRESENT-constant.html">ES_USER_PRESENT</a></li>
   <li><a href="../win32/ES_WANTRETURN-constant.html">ES_WANTRETURN</a></li>
   <li><a href="../win32/FACILITY_CERT-constant.html">FACILITY_CERT</a></li>
   <li><a href="../win32/FACILITY_CONTROL-constant.html">FACILITY_CONTROL</a></li>
@@ -577,7 +582,6 @@
   <li><a href="../win32/IMAGE_CURSOR-constant.html">IMAGE_CURSOR</a></li>
   <li><a href="../win32/IMAGE_ENHMETAFILE-constant.html">IMAGE_ENHMETAFILE</a></li>
   <li><a href="../win32/IMAGE_ICON-constant.html">IMAGE_ICON</a></li>
-  <li><a href="../win32/LR_COLOR-constant.html">LR_COLOR</a></li>
   <li><a href="../win32/LR_COPYDELETEORG-constant.html">LR_COPYDELETEORG</a></li>
   <li><a href="../win32/LR_COPYFROMRESOURCE-constant.html">LR_COPYFROMRESOURCE</a></li>
   <li><a href="../win32/LR_COPYRETURNORG-constant.html">LR_COPYRETURNORG</a></li>
@@ -1023,13 +1027,39 @@
   <li><a href="../win32/SWP_SHOWWINDOW-constant.html">SWP_SHOWWINDOW</a></li>
   <li><a href="../win32/SYNCHRONIZE-constant.html">SYNCHRONIZE</a></li>
   <li><a href="../win32/TEXT-constant.html">TEXT</a></li>
+  <li><a href="../win32/TIME_BYTES-constant.html">TIME_BYTES</a></li>
+  <li><a href="../win32/TIME_MIDI-constant.html">TIME_MIDI</a></li>
+  <li><a href="../win32/TIME_MS-constant.html">TIME_MS</a></li>
+  <li><a href="../win32/TIME_SAMPLES-constant.html">TIME_SAMPLES</a></li>
+  <li><a href="../win32/TIME_SMPTE-constant.html">TIME_SMPTE</a></li>
+  <li><a href="../win32/TIME_TICKS-constant.html">TIME_TICKS</a></li>
+  <li><a href="../win32/TPM_BOTTOMALIGN-constant.html">TPM_BOTTOMALIGN</a></li>
   <li><a href="../win32/TPM_CENTERALIGN-constant.html">TPM_CENTERALIGN</a></li>
+  <li><a href="../win32/TPM_HORIZONTAL-constant.html">TPM_HORIZONTAL</a></li>
+  <li><a href="../win32/TPM_HORNEGANIMATION-constant.html">TPM_HORNEGANIMATION</a></li>
+  <li><a href="../win32/TPM_HORPOSANIMATION-constant.html">TPM_HORPOSANIMATION</a></li>
+  <li><a href="../win32/TPM_LAYOUTRTL-constant.html">TPM_LAYOUTRTL</a></li>
   <li><a href="../win32/TPM_LEFTALIGN-constant.html">TPM_LEFTALIGN</a></li>
   <li><a href="../win32/TPM_LEFTBUTTON-constant.html">TPM_LEFTBUTTON</a></li>
+  <li><a href="../win32/TPM_NOANIMATION-constant.html">TPM_NOANIMATION</a></li>
+  <li><a href="../win32/TPM_NONOTIFY-constant.html">TPM_NONOTIFY</a></li>
+  <li><a href="../win32/TPM_RECURSE-constant.html">TPM_RECURSE</a></li>
+  <li><a href="../win32/TPM_RETURNCMD-constant.html">TPM_RETURNCMD</a></li>
   <li><a href="../win32/TPM_RIGHTALIGN-constant.html">TPM_RIGHTALIGN</a></li>
   <li><a href="../win32/TPM_RIGHTBUTTON-constant.html">TPM_RIGHTBUTTON</a></li>
+  <li><a href="../win32/TPM_TOPALIGN-constant.html">TPM_TOPALIGN</a></li>
+  <li><a href="../win32/TPM_VCENTERALIGN-constant.html">TPM_VCENTERALIGN</a></li>
+  <li><a href="../win32/TPM_VERNEGANIMATION-constant.html">TPM_VERNEGANIMATION</a></li>
+  <li><a href="../win32/TPM_VERPOSANIMATION-constant.html">TPM_VERPOSANIMATION</a></li>
+  <li><a href="../win32/TPM_VERTICAL-constant.html">TPM_VERTICAL</a></li>
+  <li><a href="../win32/TPM_WORKAREA-constant.html">TPM_WORKAREA</a></li>
   <li><a href="../win32/TRUE-constant.html">TRUE</a></li>
   <li><a href="../win32/TRUNCATE_EXISTING-constant.html">TRUNCATE_EXISTING</a></li>
+  <li><a href="../win32/WAVE_ALLOWSYNC-constant.html">WAVE_ALLOWSYNC</a></li>
+  <li><a href="../win32/WAVE_FORMAT_DIRECT-constant.html">WAVE_FORMAT_DIRECT</a></li>
+  <li><a href="../win32/WAVE_FORMAT_QUERY-constant.html">WAVE_FORMAT_QUERY</a></li>
+  <li><a href="../win32/WAVE_MAPPED-constant.html">WAVE_MAPPED</a></li>
+  <li><a href="../win32/WAVE_MAPPED_DEFAULT_COMMUNICATION_DEVICE-constant.html">WAVE_MAPPED_DEFAULT_COMMUNICATION_DEVICE</a></li>
   <li><a href="../win32/WHITEONBLACK-constant.html">WHITEONBLACK</a></li>
   <li><a href="../win32/WM_ACTIVATE-constant.html">WM_ACTIVATE</a></li>
   <li><a href="../win32/WM_ACTIVATEAPP-constant.html">WM_ACTIVATEAPP</a></li>
@@ -1299,7 +1329,6 @@
   <li><a href="../win32/BluetoothUpdateDeviceRecord.html">BluetoothUpdateDeviceRecord</a></li>
   <li><a href="../win32/BringWindowToTop.html">BringWindowToTop</a></li>
   <li><a href="../win32/CallNtPowerInformation.html">CallNtPowerInformation</a></li>
-  <li><a href="../win32/calloc.html">calloc</a></li>
   <li><a href="../win32/CancelDC.html">CancelDC</a></li>
   <li><a href="../win32/ChangeClipboardChain.html">ChangeClipboardChain</a></li>
   <li><a href="../win32/CheckRemoteDebuggerPresent.html">CheckRemoteDebuggerPresent</a></li>
@@ -1709,6 +1738,7 @@
   <li><a href="../win32/SetStretchBltMode.html">SetStretchBltMode</a></li>
   <li><a href="../win32/SetSysColors.html">SetSysColors</a></li>
   <li><a href="../win32/SetTextColor.html">SetTextColor</a></li>
+  <li><a href="../win32/SetThreadExecutionState.html">SetThreadExecutionState</a></li>
   <li><a href="../win32/SetTimer.html">SetTimer</a></li>
   <li><a href="../win32/SetViewportExtEx.html">SetViewportExtEx</a></li>
   <li><a href="../win32/SetViewportOrgEx.html">SetViewportOrgEx</a></li>
@@ -1770,6 +1800,26 @@
   <li><a href="../win32/VirtualFree.html">VirtualFree</a></li>
   <li><a href="../win32/WaitForSingleObject.html">WaitForSingleObject</a></li>
   <li><a href="../win32/WaitMessage.html">WaitMessage</a></li>
+  <li><a href="../win32/waveOutClose.html">waveOutClose</a></li>
+  <li><a href="../win32/waveOutGetDevCaps.html">waveOutGetDevCaps</a></li>
+  <li><a href="../win32/waveOutGetErrorText.html">waveOutGetErrorText</a></li>
+  <li><a href="../win32/waveOutGetID.html">waveOutGetID</a></li>
+  <li><a href="../win32/waveOutGetNumDevs.html">waveOutGetNumDevs</a></li>
+  <li><a href="../win32/waveOutGetPitch.html">waveOutGetPitch</a></li>
+  <li><a href="../win32/waveOutGetPlaybackRate.html">waveOutGetPlaybackRate</a></li>
+  <li><a href="../win32/waveOutGetPosition.html">waveOutGetPosition</a></li>
+  <li><a href="../win32/waveOutGetVolume.html">waveOutGetVolume</a></li>
+  <li><a href="../win32/waveOutMessage.html">waveOutMessage</a></li>
+  <li><a href="../win32/waveOutOpen.html">waveOutOpen</a></li>
+  <li><a href="../win32/waveOutPause.html">waveOutPause</a></li>
+  <li><a href="../win32/waveOutPrepareHeader.html">waveOutPrepareHeader</a></li>
+  <li><a href="../win32/waveOutReset.html">waveOutReset</a></li>
+  <li><a href="../win32/waveOutRestart.html">waveOutRestart</a></li>
+  <li><a href="../win32/waveOutSetPitch.html">waveOutSetPitch</a></li>
+  <li><a href="../win32/waveOutSetPlaybackRate.html">waveOutSetPlaybackRate</a></li>
+  <li><a href="../win32/waveOutSetVolume.html">waveOutSetVolume</a></li>
+  <li><a href="../win32/waveOutUnprepareHeader.html">waveOutUnprepareHeader</a></li>
+  <li><a href="../win32/waveOutWrite.html">waveOutWrite</a></li>
   <li><a href="../win32/WideCharToMultiByte.html">WideCharToMultiByte</a></li>
   <li><a href="../win32/WindowFromDC.html">WindowFromDC</a></li>
   <li><a href="../win32/WindowFromPhysicalPoint.html">WindowFromPhysicalPoint</a></li>
@@ -1792,10 +1842,10 @@
   <li><a href="../win32/EnumResTypeProc.html">EnumResTypeProc</a></li>
   <li><a href="../win32/EnumWindowsProc.html">EnumWindowsProc</a></li>
   <li><a href="../win32/HandlerProc.html">HandlerProc</a></li>
-  <li><a href="../win32/LPFRHookProc.html">LPFRHookProc</a></li>
   <li><a href="../win32/MonitorEnumProc.html">MonitorEnumProc</a></li>
   <li><a href="../win32/OutputProc.html">OutputProc</a></li>
   <li><a href="../win32/PfnAuthenticationCallbackEx.html">PfnAuthenticationCallbackEx</a></li>
+  <li><a href="../win32/TaskDialogCallbackProc.html">TaskDialogCallbackProc</a></li>
   <li><a href="../win32/TimerProc.html">TimerProc</a></li>
   <li><a href="../win32/WindowProc.html">WindowProc</a></li>
 
@@ -1820,9 +1870,9 @@ the main window for a process at creation time.</p>
       <dl class="dl-horizontal">
         <dt>Inheritance</dt>
         <dd><ul class="gt-separated dark clazz-relationships">
-          <li><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object-class.html">Object</a></li>
-          <li><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/NativeType-class.html">NativeType</a></li>
-          <li><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Struct-class.html">Struct</a></li>
+          <li><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object-class.html">Object</a></li>
+          <li><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/NativeType-class.html">NativeType</a></li>
+          <li><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Struct-class.html">Struct</a></li>
           <li>STARTUPINFO</li>
         </ul></dd>
 
@@ -1831,7 +1881,7 @@ the main window for a process at creation time.</p>
 
         <dt>Available Extensions</dt>
         <dd><ul class="comma-separated clazz-relationships">
-          <li><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/StructAddressOf.html">StructAddressOf</a></li>
+          <li><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/StructAddressOf.html">StructAddressOf</a></li>
         </ul></dd>
 
       </dl>
@@ -1841,12 +1891,11 @@ the main window for a process at creation time.</p>
       <h2>Constructors</h2>
 
       <dl class="constructor-summary-list">
-        <dt id="STARTUPINFO.allocate" class="callable">
-          <span class="name"><a href="../win32/STARTUPINFO/STARTUPINFO.allocate.html">STARTUPINFO.allocate</a></span><span class="signature">()</span>
+        <dt id="STARTUPINFO" class="callable">
+          <span class="name"><a href="../win32/STARTUPINFO/STARTUPINFO.html">STARTUPINFO</a></span><span class="signature">()</span>
         </dt>
         <dd>
            
-          <div class="constructor-modifier features">factory</div>
         </dd>
       </dl>
     </section>
@@ -1857,119 +1906,119 @@ the main window for a process at creation time.</p>
       <dl class="properties">
         <dt id="cb" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/cb.html">cb</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
 </dd>
         <dt id="cbReserved2" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/cbReserved2.html">cbReserved2</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Uint16-class.html">Uint16</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Uint16-class.html">Uint16</a>(), read / write</div>
 </dd>
         <dt id="dwFillAttribute" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/dwFillAttribute.html">dwFillAttribute</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
 </dd>
         <dt id="dwFlags" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/dwFlags.html">dwFlags</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
 </dd>
         <dt id="dwX" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/dwX.html">dwX</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
 </dd>
         <dt id="dwXCountChars" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/dwXCountChars.html">dwXCountChars</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
 </dd>
         <dt id="dwXSize" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/dwXSize.html">dwXSize</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
 </dd>
         <dt id="dwY" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/dwY.html">dwY</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
 </dd>
         <dt id="dwYCountChars" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/dwYCountChars.html">dwYCountChars</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
 </dd>
         <dt id="dwYSize" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/dwYSize.html">dwYSize</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
 </dd>
         <dt id="hashCode" class="property inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/hashCode.html">hashCode</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="name"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd class="inherited">
-          The hash code for this object. <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/hashCode.html">[...]</a>
+          The hash code for this object. <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/hashCode.html">[...]</a>
                   <div class="features">read-only, inherited</div>
 </dd>
         <dt id="hStdError" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/hStdError.html">hStdError</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a>(), read / write</div>
 </dd>
         <dt id="hStdInput" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/hStdInput.html">hStdInput</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a>(), read / write</div>
 </dd>
         <dt id="hStdOutput" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/hStdOutput.html">hStdOutput</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a>(), read / write</div>
 </dd>
         <dt id="lpDesktop" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/lpDesktop.html">lpDesktop</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span>         
         </dt>
         <dd>
            
@@ -1977,7 +2026,7 @@ the main window for a process at creation time.</p>
 </dd>
         <dt id="lpReserved" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/lpReserved.html">lpReserved</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span>         
         </dt>
         <dd>
            
@@ -1985,7 +2034,7 @@ the main window for a process at creation time.</p>
 </dd>
         <dt id="lpReserved2" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/lpReserved2.html">lpReserved2</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Uint8-class.html">Uint8</a></span>&gt;</span></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Uint8-class.html">Uint8</a></span>&gt;</span></span>         
         </dt>
         <dd>
            
@@ -1993,15 +2042,15 @@ the main window for a process at creation time.</p>
 </dd>
         <dt id="lpTitle" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/lpTitle.html">lpTitle</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span>         
         </dt>
         <dd>
            
                   <div class="features">read / write</div>
 </dd>
         <dt id="runtimeType" class="property inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Type-class.html">Type</a></span>         
+          <span class="name"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Type-class.html">Type</a></span>         
         </dt>
         <dd class="inherited">
           A representation of the runtime type of the object. 
@@ -2009,11 +2058,11 @@ the main window for a process at creation time.</p>
 </dd>
         <dt id="wShowWindow" class="property">
           <span class="name"><a href="../win32/STARTUPINFO/wShowWindow.html">wShowWindow</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Uint16-class.html">Uint16</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Uint16-class.html">Uint16</a>(), read / write</div>
 </dd>
       </dl>
     </section>
@@ -2022,21 +2071,21 @@ the main window for a process at creation time.</p>
       <h2>Methods</h2>
       <dl class="callables">
         <dt id="noSuchMethod" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+          <span class="name"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
             <span class="returntype parameter">&#8594; dynamic</span>
           </span>
                   </dt>
         <dd class="inherited">
-          Invoked when a non-existent method or property is accessed. <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/noSuchMethod.html">[...]</a>
+          Invoked when a non-existent method or property is accessed. <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/noSuchMethod.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
         <dt id="toString" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/String-class.html">String</a></span>
+          <span class="name"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/String-class.html">String</a></span>
           </span>
                   </dt>
         <dd class="inherited">
-          A string representation of this object. <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/toString.html">[...]</a>
+          A string representation of this object. <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/toString.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
       </dl>
@@ -2046,12 +2095,12 @@ the main window for a process at creation time.</p>
       <h2>Operators</h2>
       <dl class="callables">
         <dt id="operator ==" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/bool-class.html">bool</a></span>
           </span>
                   </dt>
         <dd class="inherited">
-          The equality operator. <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/operator_equals.html">[...]</a>
+          The equality operator. <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/operator_equals.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
       </dl>
@@ -2066,7 +2115,7 @@ the main window for a process at creation time.</p>
     <ol>
 
     <li class="section-title"><a href="../win32/STARTUPINFO-class.html#constructors">Constructors</a></li>
-    <li><a href="../win32/STARTUPINFO/STARTUPINFO.allocate.html">allocate</a></li>
+    <li><a href="../win32/STARTUPINFO/STARTUPINFO.html">STARTUPINFO</a></li>
 
 
     <li class="section-title">
@@ -2082,7 +2131,7 @@ the main window for a process at creation time.</p>
     <li><a href="../win32/STARTUPINFO/dwY.html">dwY</a></li>
     <li><a href="../win32/STARTUPINFO/dwYCountChars.html">dwYCountChars</a></li>
     <li><a href="../win32/STARTUPINFO/dwYSize.html">dwYSize</a></li>
-    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/hashCode.html">hashCode</a></li>
     <li><a href="../win32/STARTUPINFO/hStdError.html">hStdError</a></li>
     <li><a href="../win32/STARTUPINFO/hStdInput.html">hStdInput</a></li>
     <li><a href="../win32/STARTUPINFO/hStdOutput.html">hStdOutput</a></li>
@@ -2090,15 +2139,15 @@ the main window for a process at creation time.</p>
     <li><a href="../win32/STARTUPINFO/lpReserved.html">lpReserved</a></li>
     <li><a href="../win32/STARTUPINFO/lpReserved2.html">lpReserved2</a></li>
     <li><a href="../win32/STARTUPINFO/lpTitle.html">lpTitle</a></li>
-    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></li>
     <li><a href="../win32/STARTUPINFO/wShowWindow.html">wShowWindow</a></li>
 
     <li class="section-title inherited"><a href="../win32/STARTUPINFO-class.html#instance-methods">Methods</a></li>
-    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
-    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/toString.html">toString</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/toString.html">toString</a></li>
 
     <li class="section-title inherited"><a href="../win32/STARTUPINFO-class.html#operators">Operators</a></li>
-    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/Object/operator_equals.html">operator ==</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/Object/operator_equals.html">operator ==</a></li>
 
 
 
@@ -2112,7 +2161,7 @@ the main window for a process at creation time.</p>
 <footer>
   <span class="no-break">
     win32
-      2.0.0-nullsafety.8
+      2.0.0-nullsafety.9
   </span>
 
 </footer>

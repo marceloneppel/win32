@@ -75,9 +75,9 @@
 </h1></div>
 
     <section class="multi-line-signature">
-      <span class="returntype"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/String-class.html">String</a></span>&gt;</span></span>
+      <span class="returntype"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/String-class.html">String</a></span>&gt;</span></span>
             <span class="name ">unpackStringArray</span>
-(<wbr><ol class="parameter-list"><li><span class="parameter" id="unpackStringArray-param-maxLength"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">maxLength</span></span></li>
+(<wbr><ol class="parameter-list"><li><span class="parameter" id="unpackStringArray-param-maxLength"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">maxLength</span></span></li>
 </ol>)
       
     </section>
@@ -92,11 +92,11 @@
   for (var v = 0; v &lt; maxLength; v++) {
     final charCode = ptr.elementAt(v).value;
     if (charCode != 0) {
-      buf.write(String.fromCharCode(charCode));
+      buf.writeCharCode(charCode);
     } else {
       results.add(buf.toString());
       if (ptr.elementAt(v + 1).value == 0) {
-        return results;
+        break;
       } else {
         buf.clear();
       }
@@ -118,7 +118,7 @@
 <footer>
   <span class="no-break">
     win32
-      2.0.0-nullsafety.8
+      2.0.0-nullsafety.9
   </span>
 
 </footer>
