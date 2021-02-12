@@ -58,7 +58,6 @@
             <li><a href="topics/dxva2-topic.html">dxva2</a></li>
             <li><a href="topics/gdi32-topic.html">gdi32</a></li>
             <li><a href="topics/kernel32-topic.html">kernel32</a></li>
-            <li><a href="topics/kernelbase-topic.html">kernelbase</a></li>
             <li><a href="topics/ole32-topic.html">ole32</a></li>
             <li><a href="topics/oleaut32-topic.html">oleaut32</a></li>
             <li><a href="topics/powrprof-topic.html">powrprof</a></li>
@@ -76,12 +75,14 @@
 
   <div id="dartdoc-main-content" class="main-content">
       <section class="desc markdown">
-        <p><img src="https://github.com/timsneath/win32/blob/master/doc/images/win32.png?raw=true" alt="Dart/Win32"></p>
+        <p><img src="https://github.com/timsneath/win32/blob/main/doc/images/win32.png?raw=true" alt="Dart/Win32"></p>
 <p>A package that wraps some of the most common Win32 API calls using FFI to make
 them accessible to Dart code without requiring a C compiler or the Windows SDK.</p>
 <p><a href="https://pub.dev/packages/win32"><img src="https://img.shields.io/pub/v/win32.svg" alt="pub package"></a>
 <a href="https://dart.dev"><img src="https://img.shields.io/badge/language-Dart-blue.svg" alt="Language"></a>
-<img src="https://github.com/timsneath/win32/actions?query=workflow%3ABuild" alt="Build"></p>
+<img src="https://github.com/timsneath/win32/workflows/Dart/badge.svg" alt="Dart"></p>
+<p><strong>IMPORTANT: If you are using Flutter 1.22 or earlier, use
+<a href="https://pub.dev/packages/win32/versions/1.7.4+1">v1.7.4</a> of this package. Later versions of Dart include changes to FFI that are incompatible with older versions, and <code>win32</code> 2.x works with the updated API.</strong></p>
 <p>Perhaps of as much use as the APIs themselves, this package provides a variety
 of instructive examples for more complex FFI usage scenarios.</p>
 <p>By design, this package provides minimal modifications to the Win32 API to
@@ -96,25 +97,25 @@ wrapping common Win32, COM and Windows Runtime APIs using Dart FFI.</p>
 <p>You could use it to call a Win32 API like
 <a href="https://docs.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesexw">EnumFontFamiliesEx</a>
 to enumerate all locally-installed fonts:</p>
-<p><img src="https://github.com/timsneath/win32/blob/master/doc/images/fonts.png?raw=true" alt="Fonts screenshot"></p>
+<p><img src="https://github.com/timsneath/win32/blob/main/doc/images/fonts.png?raw=true" alt="Fonts screenshot"></p>
 <p>or access system information that is not exposed directly by the Dart framework
 libraries:</p>
-<p><img src="https://github.com/timsneath/win32/blob/master/doc/images/power.png?raw=true" alt="System information screenshot"></p>
+<p><img src="https://github.com/timsneath/win32/blob/main/doc/images/power.png?raw=true" alt="System information screenshot"></p>
 <p>You could use it to build a Windows app with Flutter that relies on Win32 APIs:</p>
-<p><img src="https://github.com/timsneath/win32/blob/master/doc/images/disk_explorer.png?raw=true" alt="Disk explorer screenshot"></p>
+<p><img src="https://github.com/timsneath/win32/blob/main/doc/images/disk_explorer.png?raw=true" alt="Disk explorer screenshot"></p>
 <p>You could even use it to build a traditional Win32 app, written purely in Dart,
 that could have come straight out of a classic Charles Petzold book on
 programming Windows apps:</p>
-<p><img src="https://github.com/timsneath/win32/blob/master/doc/images/notepad.png?raw=true" alt="Dart notepad screenshot"></p>
+<p><img src="https://github.com/timsneath/win32/blob/main/doc/images/notepad.png?raw=true" alt="Dart notepad screenshot"></p>
 <p>or even, perhaps, a fully-fledged game using GDI:</p>
-<p><img src="https://github.com/timsneath/win32/blob/master/doc/images/tetris.png?raw=true" alt="Dart Tetris for Win32 screenshot"></p>
+<p><img src="https://github.com/timsneath/win32/blob/main/doc/images/tetris.png?raw=true" alt="Dart Tetris for Win32 screenshot"></p>
 <p>You might even build a package that depends upon it, like
 <a href="https://pub.dev/packages/dart_console">dart_console</a>, which enables advanced
 console manipulation:</p>
-<p><img src="https://github.com/timsneath/win32/blob/master/doc/images/console.png?raw=true" alt="Dart console ANSI color demo screenshot"></p>
+<p><img src="https://github.com/timsneath/win32/blob/main/doc/images/console.png?raw=true" alt="Dart console ANSI color demo screenshot"></p>
 <p>or <a href="https://pub.dev/packages/filepicker_windows">filepicker_windows</a>, which
 provides a modern Windows file picker for Flutter:</p>
-<p><img src="https://github.com/timsneath/win32/blob/master/doc/images/filepicker.png?raw=true" alt="Windows file picker screenshot"></p>
+<p><img src="https://github.com/timsneath/win32/blob/main/doc/images/filepicker.png?raw=true" alt="Windows file picker screenshot"></p>
 <h2 id="getting-started">Getting started</h2>
 <p>Many more samples can be found in the <code>example\</code> subdirectory, along with a test
 suite in the <code>test\</code> subdirectory that shows other API calls.</p>
@@ -206,7 +207,7 @@ the <a href="https://github.com/MicrosoftDocs/win32/blob/7b49862e8d58cfad5d4e5e2
 <footer>
   <span class="no-break">
     win32
-      2.0.0-nullsafety.9
+      2.0.0
   </span>
 
 </footer>

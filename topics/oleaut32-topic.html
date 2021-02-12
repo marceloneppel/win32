@@ -59,7 +59,6 @@
             <li><a href="../topics/dxva2-topic.html">dxva2</a></li>
             <li><a href="../topics/gdi32-topic.html">gdi32</a></li>
             <li><a href="../topics/kernel32-topic.html">kernel32</a></li>
-            <li><a href="../topics/kernelbase-topic.html">kernelbase</a></li>
             <li><a href="../topics/ole32-topic.html">ole32</a></li>
             <li><a href="../topics/oleaut32-topic.html">oleaut32</a></li>
             <li><a href="../topics/powrprof-topic.html">powrprof</a></li>
@@ -91,9 +90,20 @@
         <h2>Functions</h2>
 
         <dl class="callables">
+            <dt id="DosDateTimeToVariantTime" class="callable">
+              <span class="name"><a href="../win32/DosDateTimeToVariantTime.html">DosDateTimeToVariantTime</a></span><span class="signature">(<wbr><span class="parameter" id="DosDateTimeToVariantTime-param-wDosDate"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">wDosDate</span>, </span><span class="parameter" id="DosDateTimeToVariantTime-param-wDosTime"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">wDosTime</span>, </span><span class="parameter" id="DosDateTimeToVariantTime-param-pvtime"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Double-class.html">Double</a></span>&gt;</span></span> <span class="parameter-name">pvtime</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
+              </dt>
+            <dd>
+              Converts the MS-DOS representation of time to the date and time
+representation stored in a variant. <a href="../win32/DosDateTimeToVariantTime.html">[...]</a>
+                          
+</dd>
             <dt id="GetActiveObject" class="callable">
-              <span class="name"><a href="../win32/GetActiveObject.html">GetActiveObject</a></span><span class="signature">(<wbr><span class="parameter" id="GetActiveObject-param-rclsid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">rclsid</span>, </span><span class="parameter" id="GetActiveObject-param-pvReserved"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pvReserved</span>, </span><span class="parameter" id="GetActiveObject-param-ppunk"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">ppunk</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/GetActiveObject.html">GetActiveObject</a></span><span class="signature">(<wbr><span class="parameter" id="GetActiveObject-param-rclsid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">rclsid</span>, </span><span class="parameter" id="GetActiveObject-param-pvReserved"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pvReserved</span>, </span><span class="parameter" id="GetActiveObject-param-ppunk"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">ppunk</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
               </dt>
@@ -103,8 +113,8 @@ OLE. <a href="../win32/GetActiveObject.html">[...]</a>
                           
 </dd>
             <dt id="SysAllocString" class="callable">
-              <span class="name"><a href="../win32/SysAllocString.html">SysAllocString</a></span><span class="signature">(<wbr><span class="parameter" id="SysAllocString-param-psz"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">psz</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span>
+              <span class="name"><a href="../win32/SysAllocString.html">SysAllocString</a></span><span class="signature">(<wbr><span class="parameter" id="SysAllocString-param-psz"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">psz</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span>
               </span>
                               <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
               </dt>
@@ -112,8 +122,30 @@ OLE. <a href="../win32/GetActiveObject.html">[...]</a>
               Allocates a new string and copies the passed string into it. <a href="../win32/SysAllocString.html">[...]</a>
                           
 </dd>
+            <dt id="SysAllocStringByteLen" class="callable">
+              <span class="name"><a href="../win32/SysAllocStringByteLen.html">SysAllocStringByteLen</a></span><span class="signature">(<wbr><span class="parameter" id="SysAllocStringByteLen-param-psz"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Uint8-class.html">Uint8</a></span>&gt;</span></span> <span class="parameter-name">psz</span>, </span><span class="parameter" id="SysAllocStringByteLen-param-len"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">len</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span>
+              </span>
+                              <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
+              </dt>
+            <dd>
+              Takes an ANSI string as input, and returns a BSTR that contains an ANSI
+string. Does not perform any ANSI-to-Unicode translation. <a href="../win32/SysAllocStringByteLen.html">[...]</a>
+                          
+</dd>
+            <dt id="SysAllocStringLen" class="callable">
+              <span class="name"><a href="../win32/SysAllocStringLen.html">SysAllocStringLen</a></span><span class="signature">(<wbr><span class="parameter" id="SysAllocStringLen-param-strIn"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">strIn</span>, </span><span class="parameter" id="SysAllocStringLen-param-ui"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">ui</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span>
+              </span>
+                              <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
+              </dt>
+            <dd>
+              Allocates a new string, copies the specified number of characters from
+the passed string, and appends a null-terminating character. <a href="../win32/SysAllocStringLen.html">[...]</a>
+                          
+</dd>
             <dt id="SysFreeString" class="callable">
-              <span class="name"><a href="../win32/SysFreeString.html">SysFreeString</a></span><span class="signature">(<wbr><span class="parameter" id="SysFreeString-param-bstrString"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">bstrString</span></span>)
+              <span class="name"><a href="../win32/SysFreeString.html">SysFreeString</a></span><span class="signature">(<wbr><span class="parameter" id="SysFreeString-param-bstrString"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">bstrString</span></span>)
                 <span class="returntype parameter">&#8594; void</span>
               </span>
                               <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
@@ -124,9 +156,43 @@ SysAllocStringByteLen, SysReAllocString, SysAllocStringLen, or
 SysReAllocStringLen. <a href="../win32/SysFreeString.html">[...]</a>
                           
 </dd>
+            <dt id="SysReAllocString" class="callable">
+              <span class="name"><a href="../win32/SysReAllocString.html">SysReAllocString</a></span><span class="signature">(<wbr><span class="parameter" id="SysReAllocString-param-pbstr"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">pbstr</span>, </span><span class="parameter" id="SysReAllocString-param-psz"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">psz</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
+              </dt>
+            <dd>
+              Reallocates a previously allocated string to be the size of a second
+string and copies the second string into the reallocated memory. <a href="../win32/SysReAllocString.html">[...]</a>
+                          
+</dd>
+            <dt id="SysReAllocStringLen" class="callable">
+              <span class="name"><a href="../win32/SysReAllocStringLen.html">SysReAllocStringLen</a></span><span class="signature">(<wbr><span class="parameter" id="SysReAllocStringLen-param-pbstr"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">pbstr</span>, </span><span class="parameter" id="SysReAllocStringLen-param-psz"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">psz</span>, </span><span class="parameter" id="SysReAllocStringLen-param-len"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">len</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
+              </dt>
+            <dd>
+              Creates a new BSTR containing a specified number of characters from an
+old BSTR, and frees the old BSTR. <a href="../win32/SysReAllocStringLen.html">[...]</a>
+                          
+</dd>
+            <dt id="SysReleaseString" class="callable">
+              <span class="name"><a href="../win32/SysReleaseString.html">SysReleaseString</a></span><span class="signature">(<wbr><span class="parameter" id="SysReleaseString-param-bstrString"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">bstrString</span></span>)
+                <span class="returntype parameter">&#8594; void</span>
+              </span>
+                              <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
+              </dt>
+            <dd>
+              Decreases the pinning reference count for the specified string by one.
+When that count reaches 0, the memory for that string is no longer
+prevented from being freed. <a href="../win32/SysReleaseString.html">[...]</a>
+                          
+</dd>
             <dt id="SysStringByteLen" class="callable">
-              <span class="name"><a href="../win32/SysStringByteLen.html">SysStringByteLen</a></span><span class="signature">(<wbr><span class="parameter" id="SysStringByteLen-param-bstr"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">bstr</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/SysStringByteLen.html">SysStringByteLen</a></span><span class="signature">(<wbr><span class="parameter" id="SysStringByteLen-param-bstr"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">bstr</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
               </dt>
@@ -135,8 +201,8 @@ SysReAllocStringLen. <a href="../win32/SysFreeString.html">[...]</a>
                           
 </dd>
             <dt id="SysStringLen" class="callable">
-              <span class="name"><a href="../win32/SysStringLen.html">SysStringLen</a></span><span class="signature">(<wbr><span class="parameter" id="SysStringLen-param-pbstr"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pbstr</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/SysStringLen.html">SysStringLen</a></span><span class="signature">(<wbr><span class="parameter" id="SysStringLen-param-pbstr"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pbstr</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
               </dt>
@@ -144,9 +210,19 @@ SysReAllocStringLen. <a href="../win32/SysFreeString.html">[...]</a>
               Returns the length of a BSTR. <a href="../win32/SysStringLen.html">[...]</a>
                           
 </dd>
+            <dt id="VariantChangeType" class="callable">
+              <span class="name"><a href="../win32/VariantChangeType.html">VariantChangeType</a></span><span class="signature">(<wbr><span class="parameter" id="VariantChangeType-param-pvargDest"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pvargDest</span>, </span><span class="parameter" id="VariantChangeType-param-pvarSrc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pvarSrc</span>, </span><span class="parameter" id="VariantChangeType-param-wFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">wFlags</span>, </span><span class="parameter" id="VariantChangeType-param-vt"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">vt</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
+              </dt>
+            <dd>
+              Converts a variant from one type to another. <a href="../win32/VariantChangeType.html">[...]</a>
+                          
+</dd>
             <dt id="VariantClear" class="callable">
-              <span class="name"><a href="../win32/VariantClear.html">VariantClear</a></span><span class="signature">(<wbr><span class="parameter" id="VariantClear-param-pvarg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pvarg</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/VariantClear.html">VariantClear</a></span><span class="signature">(<wbr><span class="parameter" id="VariantClear-param-pvarg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pvarg</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
               </dt>
@@ -154,14 +230,45 @@ SysReAllocStringLen. <a href="../win32/SysFreeString.html">[...]</a>
               Clears a variant. <a href="../win32/VariantClear.html">[...]</a>
                           
 </dd>
+            <dt id="VariantCopy" class="callable">
+              <span class="name"><a href="../win32/VariantCopy.html">VariantCopy</a></span><span class="signature">(<wbr><span class="parameter" id="VariantCopy-param-pvargDest"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pvargDest</span>, </span><span class="parameter" id="VariantCopy-param-pvargSrc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pvargSrc</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
+              </dt>
+            <dd>
+              Frees the destination variant and makes a copy of the source variant. <a href="../win32/VariantCopy.html">[...]</a>
+                          
+</dd>
             <dt id="VariantInit" class="callable">
-              <span class="name"><a href="../win32/VariantInit.html">VariantInit</a></span><span class="signature">(<wbr><span class="parameter" id="VariantInit-param-pvarg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-263.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pvarg</span></span>)
+              <span class="name"><a href="../win32/VariantInit.html">VariantInit</a></span><span class="signature">(<wbr><span class="parameter" id="VariantInit-param-pvarg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pvarg</span></span>)
                 <span class="returntype parameter">&#8594; void</span>
               </span>
                               <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
               </dt>
             <dd>
               Initializes a variant. <a href="../win32/VariantInit.html">[...]</a>
+                          
+</dd>
+            <dt id="VariantTimeToDosDateTime" class="callable">
+              <span class="name"><a href="../win32/VariantTimeToDosDateTime.html">VariantTimeToDosDateTime</a></span><span class="signature">(<wbr><span class="parameter" id="VariantTimeToDosDateTime-param-vtime"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/double-class.html">double</a></span> <span class="parameter-name">vtime</span>, </span><span class="parameter" id="VariantTimeToDosDateTime-param-pwDosDate"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Uint16-class.html">Uint16</a></span>&gt;</span></span> <span class="parameter-name">pwDosDate</span>, </span><span class="parameter" id="VariantTimeToDosDateTime-param-pwDosTime"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Uint16-class.html">Uint16</a></span>&gt;</span></span> <span class="parameter-name">pwDosTime</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
+              </dt>
+            <dd>
+              Converts the variant representation of a date and time to MS-DOS date
+and time values. <a href="../win32/VariantTimeToDosDateTime.html">[...]</a>
+                          
+</dd>
+            <dt id="VariantTimeToSystemTime" class="callable">
+              <span class="name"><a href="../win32/VariantTimeToSystemTime.html">VariantTimeToSystemTime</a></span><span class="signature">(<wbr><span class="parameter" id="VariantTimeToSystemTime-param-vtime"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/double-class.html">double</a></span> <span class="parameter-name">vtime</span>, </span><span class="parameter" id="VariantTimeToSystemTime-param-lpSystemTime"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/SYSTEMTIME-class.html">SYSTEMTIME</a></span>&gt;</span></span> <span class="parameter-name">lpSystemTime</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.13.0-0.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
+              </dt>
+            <dd>
+              Converts the variant representation of time to system time values. <a href="../win32/VariantTimeToSystemTime.html">[...]</a>
                           
 </dd>
         </dl>
@@ -180,13 +287,23 @@ SysReAllocStringLen. <a href="../win32/SysFreeString.html">[...]</a>
     
     
       <li class="section-title"><a href="../topics/oleaut32-topic.html#functions">Functions</a></li>
+      <li><a href="../win32/DosDateTimeToVariantTime.html">DosDateTimeToVariantTime</a></li>
       <li><a href="../win32/GetActiveObject.html">GetActiveObject</a></li>
       <li><a href="../win32/SysAllocString.html">SysAllocString</a></li>
+      <li><a href="../win32/SysAllocStringByteLen.html">SysAllocStringByteLen</a></li>
+      <li><a href="../win32/SysAllocStringLen.html">SysAllocStringLen</a></li>
       <li><a href="../win32/SysFreeString.html">SysFreeString</a></li>
+      <li><a href="../win32/SysReAllocString.html">SysReAllocString</a></li>
+      <li><a href="../win32/SysReAllocStringLen.html">SysReAllocStringLen</a></li>
+      <li><a href="../win32/SysReleaseString.html">SysReleaseString</a></li>
       <li><a href="../win32/SysStringByteLen.html">SysStringByteLen</a></li>
       <li><a href="../win32/SysStringLen.html">SysStringLen</a></li>
+      <li><a href="../win32/VariantChangeType.html">VariantChangeType</a></li>
       <li><a href="../win32/VariantClear.html">VariantClear</a></li>
+      <li><a href="../win32/VariantCopy.html">VariantCopy</a></li>
       <li><a href="../win32/VariantInit.html">VariantInit</a></li>
+      <li><a href="../win32/VariantTimeToDosDateTime.html">VariantTimeToDosDateTime</a></li>
+      <li><a href="../win32/VariantTimeToSystemTime.html">VariantTimeToSystemTime</a></li>
     
     
     
@@ -197,7 +314,7 @@ SysReAllocStringLen. <a href="../win32/SysFreeString.html">[...]</a>
 <footer>
   <span class="no-break">
     win32
-      2.0.0-nullsafety.9
+      2.0.0
   </span>
 
 </footer>
